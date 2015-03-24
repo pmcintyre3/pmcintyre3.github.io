@@ -1,31 +1,222 @@
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Phillip McIntyre</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<!-- /\ Head | Body \/ -->
+    <title>Phillip McIntyre</title>
 
-<body>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-  <div class="header">
-      <p id="name">Phillip McIntyre</p>
-      <a href="mailto:pmcin3@uga.edu"><p id="email"> pmcin3@uga.edu</p></a>
-  </div>
-  <div class="index">
-    <img src="mcintyre_phillip.jpg" />
-    <div id="list">
-    <ul>
-      <li> <a href="index.html"><strong>Home</strong></a></li>
-      <li> <a href="projects.html">Projects</a> </li>
-      <li> Resume </li>
-    </ul>
-  </div>
-  </div>
-  <div class="main">
-    
-  </div>
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  </head>
 
+  <body>
 
-</body>
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
+        <li class="sidebar-brand"><a href="http://startbootstrap.com">Bootstrap</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#portfolio">Gallery</a></li>
+        <li><a href="#services">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /Side Menu -->
+  
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+      <div class="vert-text">
+        <h1>Phillip A McIntyre Jr</h1>
+        <h3>Computer Science student, musician, amateur video game player.</h3>
+        <a href="#intro" class="btn btn-default btn-lg">More</a>
+      </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+  
+    <!-- Intro -->
+    <div id="intro" class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h2>Bachelor of Science in Computer Science, <em>University of Georgia</em></h2>
+            <p class="lead">In addition to studying computer science, I also split my free time between tinkering with Android phones, playing/writing music, and studying Japanese.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Intro -->
+  
+    <!-- Services -->
+    <div id="services" class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Game Programming Projects</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-rocket"></i>
+              <h4>Air Fighter</h4>
+              <p>Project focusing on game implementation using only JavaScript, used within HTML5/CSS</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-magnet"></i>
+              <a href="project2/index.html"><h4>Dungeon Knight</h4></a>
+              <p>Project focusing on game play and core understanding of key game mechanics using impactJS engine</p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-shield"></i>
+              <h4>Project 3</h4>
+              <p><em>Coming Soon!</em></p>
+            </div>
+          </div>
+          <div class="col-md-2 text-center">
+            <div class="service-item">
+              <i class="service-icon icon-pencil"></i>
+              <h4>Project 4</h4>
+              <p><em>Coming Soon!</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div class="callout">
+      <div class="vert-text">
+        <h1>Gallery</h1>
+      </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div id ="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <h2>Project Gallery</h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="portfolio-item">
+              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-1.jpg"></a>
+              <h4>Air Fighter</h4>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="portfolio-item">
+              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-2.jpg"></a>
+              <h4>Dungeon Knight</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 text-center">
+            <div class="portfolio-item">
+              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-3.jpg"></a>
+              <h4>Project 3 - <em>Coming Soon!</em></h4>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="portfolio-item">
+              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-4.jpg"></a>
+              <h4>Project 4 - Coming Soon!</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <h3>The buttons below are impossible to resist.</h3>
+            <a href="#top" class="btn btn-lg btn-default">Click Me!</a>
+            <a href="#top" class="btn btn-lg btn-primary">Look at Me!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Call to Action -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-inline">
+              <li><i class="icon-facebook icon-2x"></i></li>
+              <li><i class="icon-twitter icon-2x"></i></li>
+              <li><i class="icon-dribbble icon-2x"></i></li>
+            </ul>
+            <hr>
+            <p>Copyright &copy; Phillip McIntyre, 2015</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
+  <script>
+      $("#menu-close").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+  </script>
+  <script>
+      $("#menu-toggle").click(function(e) {
+          e.preventDefault();
+          $("#sidebar-wrapper").toggleClass("active");
+      });
+  </script>
+  <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+              || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
+  </body>
+
 </html>
