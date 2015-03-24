@@ -56,11 +56,11 @@ function preloader(){
     boom.volume = 0.15;
 
     titleMusic.pause();
-    titleMusic.currentTime = 0;
+    //titleMusic.currentTime = 0;
     battleMusic.pause();
-    battleMusic.currentTime = 0;
+    //battleMusic.currentTime = 0;
     gameOverMusic.pause();
-    gameOverMusic.currentTime = 0;
+    //gameOverMusic.currentTime = 0;
 
 
     x = PLAYER_START_X;
