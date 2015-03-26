@@ -73,7 +73,7 @@ header .banner-text h3 {
 }
 header .banner-text h3 span,
 header .banner-text h3 a {
-   color: #79CDCD; /*#fff*/
+   color: #79CDCD; /*#F4BB95;*/ /*#F69250;*/ /*#F06000;*/ /*#79CDCD;*/ /*#fff*/
 }
 header .banner-text hr {
    width: 60%;
