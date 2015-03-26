@@ -1,222 +1,752 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Phillip McIntyre</title>
+<!--- New Template --->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  </head>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-  <body>
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
-        <li class="sidebar-brand"><a href="http://startbootstrap.com">Bootstrap</a></li>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#portfolio">Gallery</a></li>
-        <li><a href="#services">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-    <!-- /Side Menu -->
-  
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-      <div class="vert-text">
-        <h1>Phillip A McIntyre Jr</h1>
-        <h3>Computer Science student, musician, amateur video game player.</h3>
-        <a href="#intro" class="btn btn-default btn-lg">More</a>
-      </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-  
-    <!-- Intro -->
-    <div id="intro" class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h2>Bachelor of Science in Computer Science, <em>University of Georgia</em></h2>
-            <p class="lead">In addition to studying computer science, I also split my free time between tinkering with Android phones, playing/writing music, and studying Japanese.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Intro -->
-  
-    <!-- Services -->
-    <div id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Game Programming Projects</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2 col-md-offset-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-rocket"></i>
-              <a href="project1/index.html"><h4>Air Fighter</h4></a>
-              <p>Project focusing on game implementation using only JavaScript, used within HTML5/CSS</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-shield"></i>
-              <a href="project2/index.html"><h4>Dungeon Knight</h4></a>
-              <p>Project focusing on game play and core understanding of key game mechanics using impactJS engine</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-magnet"></i>
-              <h4>Project 3</h4>
-              <p><em>Coming Soon!</em></p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-pencil"></i>
-              <h4>Project 4</h4>
-              <p><em>Coming Soon!</em></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Services -->
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Callout -->
-    <div class="callout">
-      <div class="vert-text">
-        <h1>Gallery</h1>
-      </div>
-    </div>
-    <!-- /Callout -->
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Portfolio -->
-    <div id ="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Project Gallery</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-1.jpg"></a>
-              <h4>Air Fighter</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-2.jpg"></a>
-              <h4>Dungeon Knight</h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-3.jpg"></a>
-              <h4>Project 3 - <em>Coming Soon!</em></h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <a href="#top"><img class="img-portfolio img-responsive" src="img/portfolio-4.jpg"></a>
-              <h4>Project 4 - <em>Coming Soon!</em></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Portfolio -->
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-    <!-- Call to Action -->
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>The buttons below are impossible to resist.</h3>
-            <a href="#top" class="btn btn-lg btn-default">Click Me!</a>
-            <a href="#top" class="btn btn-lg btn-primary">Look at Me!</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Call to Action -->
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 57x57 64x64 72x72 114x114 120x120 144x144 152x152" href="pmcintyre3.github.io/favicon.png" >
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <ul class="list-inline">
-              <li><i class="icon-facebook icon-2x"></i></li>
-              <li><i class="icon-twitter icon-2x"></i></li>
-              <li><i class="icon-dribbble icon-2x"></i></li>
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">Phillip A McIntyre Jr.</h1>
+            <h3>I'm a University of Georgia <span>Student</span> and an aspiring <span>Software Developer</span>, working on refining
+			my knowledge and abilities in C++ and Java programming as well as building my repitoire in Web Development. 
+			<br><a href="#about" class="smoothscroll">More about me</a>
+            <hr />
+            <ul class="social">
+               <li><a href="http://github.com/pmcintyre3"><i class="fa fa-github"></i></a></li>
+			   <li><a href="http://www.linkedin.com/in/pmcintyre3"><i class="fa fa-linkedin"></i></a></li>
+			   <li><a href="https://plus.google.com/+PhillipMcIntyre"><i class="fa fa-google-plus"></i></a></li>
             </ul>
-            <hr>
-            <p>Copyright &copy; Phillip McIntyre, 2015</p>
-          </div>
-        </div>
+            </ul>
+            </ul>
+         </div>
       </div>
-    </footer>
-    <!-- /Footer -->
 
-  <!-- Bootstrap core JavaScript -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
-  <script>
-      $("#menu-close").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-      $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-              || location.hostname == this.hostname) {
+   </header> <!-- Header End -->
 
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>
 
-  </body>
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>I am Phillip McIntyre and I am a hard-worker with a love for technology and the arts. 
+			I am currently pursuing a Bachelor's of Science in Computer Science at the University of Georgia 
+			and I am confident that the skills I learn here will allow me to contribute so much and learn even 
+			more from any opportunity given to me.
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Phillip A McIntyre Jr</span><br>
+						   <span>Athens, GA US<br>
+                     </span><br>
+                     <span>pmcin3@uga.edu</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="docs/Resume.pdf" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                <h3>University of Georgia</h3>
+                <p class="info">Bachelor of Science in Computer Science <span>&bull;</span> <em class="date">Expected Graduation: December 2015</em></p>
+
+					<p>
+						At the University of Georgia, I learned the theoretical and practical background of software and hardware. Courses like Systems Programming and Data Structures
+						emphasize the importance of being efficient and practical when approaching computing projects. Other classes listed provided a
+						means to exercise this knowledge and become comfortable with implementing efficient data structures to create well-rounded projects.
+					</p>
+					<div class="six columns">
+						<p style="text-decoration: underline">Relevant Coursework:</p>
+						<ul>
+							<li>Systems Programming - C, C++, UNIX</li></li>
+							<li>Software Engineering - Java, JavaFX, Swing, UNIX, UML</li>
+							<li>Scientific Computation - MATLAB, Octave</li>
+							<li>Web Programming - HTML5, CSS, JavaScript, PHP, SQL</li>
+						</ul>
+					</div>
+					<div class="six columns">
+						<ul>
+							<li>Game Development - JavaScript, Unity, HTML5, CSS</li>
+							<li>Discrete Mathematics - LaTeX</li>
+							<li>Theory of Computation</li>
+							<li>Data Structures - C, C++</li>
+							<li>Management Info Systems - Access, Excel</li>
+						</ul>
+					</div>
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Experience</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>CUDA and GPU Research Center</h3>
+                  <p class="info">Participant <span>&bull;</span> <em class="date">August - December 2014</em></p>
+
+                  <p>
+                  The CUDA and GPU Research Center is a joint effort between the University of Georgia and <a href="https://developer.nvidia.com/cuda-zone">NVIDIA 
+				  Corporation</a> that offers workshops to expose students to CUDA, NVIDIA's proprietary C-library for GPUs. In Fall 2014, I spent each week learning
+				  about the CUDA language and received instruction on how to use it to interact between the CPU and GPU.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Data Quality VoIP vs Cellular 3G</h3>
+                  <p class="info">Scientific Research Paper <span>&bull;</span> <em class="date">January - May 2010</em></p>
+
+                  <p>
+                  As part of a senior project, I interned at a local telecommunications company and began researching how voice data is transmitted over various data networks, specifically
+				  TCP/IP and 3rd Generation, or 3G, cellular data networks. This data was compared to the quality of voice data transmitted through a land-line phone network. 
+				  Popular VoIP programs like Skype were used to meter transmission quality and efficiency, and these were compared to an iPhone 3GS over its 3G network. After 
+				  my research was completed, I present this information to a panel that included local business leaders as well as state and local representatives.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+			
+			<div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>University of Georgia Food Services</h3>
+                  <p class="info">Student Clerical - Food Administration <span>&bull;</span> <em class="date">August 2013 - Present</em></p>
+
+                  <p>
+					UGA Food Services is one of the largest businesses in Athens, employing well over 1000 student employees each year. As a student clerical,
+					I am responsible for hiring new students and hosting orientations several times a week. In these orientations, I review and educate new
+					employees about the policies in place at Food Services and the University of Georgia as well as encourage the importance of good customer service.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+			
+			<div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Cynergy Telecom Management</h3>
+                  <p class="info">Data Entry Intern <span>&bull;</span> <em class="date">January - August 2010</em></p>
+
+                  <p>
+                  While working on my research paper, I was responsible for maintaining and updating the company's client databases. I also was responsible for helping around the
+				  office, setting up computers and assisting other Operations employees with handling customer input.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+        <div class="nine columns main-col">
+			<div class="four columns">
+				<p style="text-decoration: underline">Development Software/Tools</p>
+				<ul>
+					<li>Visual Studio, WebStorm, IntelliJ, Notepad++</li>
+					<li>Android SDK</li>
+					<li>Emacs, Vim</li>
+					<li>GDB, Valgrind</li>
+					<li>GCC, JavaC</li>
+				</ul>
+			</div>
+			<div class="four columns">
+				<p style="text-decoration: underline">Computing <br> Languages</p>
+				<ul>
+					<li>C, C++</li>
+					<li>Java</li>
+					<li>JavaScript, jQuery, JSON</li>
+					<li>PHP, Ruby, SQL</li>
+					<li>HTML5, CSS</li>
+				</ul>
+			</div>
+			
+			<div class="four columns">
+				<p style="text-decoration: underline">Other <br> <br></p>
+				<ul>
+					<li>I am currently self-teaching myself Japanese</li>
+				</ul>
+			</div>
+
+		</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/AirFighter.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Air Fighter!</h5>
+                              <p>JavaScript, HTML5, CSS</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/DungeonKnight.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Dungeon Knight</h5>
+                              <p>impactJs, Box2D, JavaScript, HTML5, CSS</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/console.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>TBA</h5>
+                              <p>Coming soon!</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+				
+				<div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/into-the-light.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>TBA</h5>
+                              <p>Coming Soon! </p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-AirFighter.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Air Fighter!</h4>
+			      <p>My first attempt at game programming. See my github site if you would like to download the source!</p>
+               <span class="categories"><i class="fa fa-tag"></i><a href="https://github.com/pmcintyre3/AirFighter">Source</a></span>
+		      </div>
+
+            <div class="link-box">
+               <a href="project1/index.html">Play!</a>
+		       <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+         <div id="modal-02" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-DungeonKnight.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Dungeon Knight</h4>
+			      <p>My second attempt at game programming. Uses well-established engine impactJs in conjunction with Box2D.</p>
+               <span class="categories"><i class="fa fa-tag"></i><a href="https://github.com/pmcintyre3/Dungeon-Knight">Source</a></span>
+		      </div>
+
+            <div class="link-box">
+               <a href="project2/index.html">Play!</a>
+		       <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-02 End -->
+		  
+		  <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>TBA</h4>
+			      <p>Coming soon!</p>
+               <span class="categories"><i class="fa fa-tag"></i>Source</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Play!</a>
+		       <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+		  
+		  <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>TBA</h4>
+			      <p>Coming soon!</p>
+               <span class="categories"><i class="fa fa-tag"></i>Source</span>
+		      </div>
+
+            <div class="link-box">
+               <a href="#">Play!</a>
+		       <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ==================================================
+   <section id="call-to-action">
+
+      <div class="row">
+
+         <div class="two columns header-col">
+
+            <h1><span>Get Hosting.</span></h1>
+
+         </div>
+
+         <div class="seven columns">
+
+            <h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
+            <p>Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+					Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>. 
+					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --><!--</p>
+
+         </div>
+
+         <div class="three columns action">
+
+            <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
+
+         </div>
+
+      </div>
+
+   </section> <!-- Call-To-Action Section End-->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>When you talk, you are only repeating what you already know. When you listen, you may
+						   learn something new.
+                           </p>
+                           <cite>Dalai Lama</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>A smooth sea never made a skilled sailor.
+                           </p>
+                           <cite>English Proverb</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+					 <li>
+                        <blockquote>
+                           <p>Optimism is the faith that leads to achievement. Nothing can be done without hope and
+						   confidence.
+                           </p>
+                           <cite>Helen Keller</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>Do the difficult things while they are easy and do the great things while they are
+						   small. A journey of a thousand miles must begin with a single step.
+                           </p>
+                           <cite>Lao Tzu</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+					 <li>
+                        <blockquote>
+                           <p>Setting goals is the first step in turning the invisible into the visible.
+                           </p>
+                           <cite>Tony Robbins</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+					 
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <!---
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">
+				  If you would like to contact me, please leave your information in the following fields. Thank you
+				  for your time!
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+			   <!---
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+			   <!---
+               <div id="message-warning"> Error!</div>
+               <!-- contact-success -->
+			   <!---
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					   <h4>Various Contact information</h4>
+					   <p class="address">
+						   Jonathan Doe<br>
+						   1600 Amphitheatre Parkway <br>
+						   Mountain View, CA 94043 US<br>
+						   <span>(123) 456-7890</span>
+					   </p>
+
+				   </div>
+
+               <div class="widget widget_tweets">
+
+                  <h4 class="widget-title">Latest Tweets</h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">2 Days Ago</a></b>
+                     </li>
+                     <li>
+                        <span>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                        eaque ipsa quae ab illo inventore veritatis et quasi
+                        <a href="#">http://t.co/CGIrdxIlI3</a>
+                        </span>
+                        <b><a href="#">3 Days Ago</a></b>
+                     </li>
+                  </ul>
+
+		         </div>
+
+            </aside>
+
+      </div>
+
+   </section> ---> <!-- Contact Section End-->
+   
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+			<ul class="copyright">
+				<li>Phillip A Mcintyre Jr</li>
+				<li>pmcin3@uga.edu</li>
+			</ul>
+		 
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; Copyright 2014 CeeVee</li>
+               <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>   
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
 
 </html>
