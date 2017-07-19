@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CreditBureaux</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
+	<script src="https://use.fontawesome.com/204f54b025.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CreditBureaux</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                        <a href="creditScore.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div class="container">
+		
+		<div class="row" id="classDiagram">
+			<div class="col-sm-6">
+				<div class="graphSpace">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3>Experian</h3> <span class="text-muted"> Credit Score </span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1 class="creditScore">657</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div id="leftChartBox" class="col-sm-12 creditGraph">
+							<canvas id="leftChart"></canvas>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#experianModal">
+								Credit Details
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="graphSpace">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3>Equifax</h3> <span class="text-muted"> Credit Score </span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h1 class="creditScore">681</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div id="rightChartBox" class="col-sm-12 creditGraph">
+							<canvas id="rightChart"></canvas>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<!-- Button trigger modal -->
+							<button type="button" class="btn btn-default" data-toggle="modal" data-target="#equifaxModal">
+								Credit Details
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<section class="evenSection">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2>Did You Know...</h2>
+					<hr class="jumbotron-hr"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="fa fa-check text-success" aria-hidden="true"></i>
+							<p style="display: inline;">Nullam posuere sapien sem, ac gravida neque auctor a.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="fa fa-check text-success" aria-hidden="true"></i>
+							<p style="display: inline;">Pellentesque turpis augue, condimentum eu odio sit amet, accumsan viverra nulla.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="fa fa-check text-success" aria-hidden="true"></i>
+							<p style="display: inline;">Morbi euismod, dui sed aliquam luctus, purus lacus pellentesque nisl, sit amet aliquet mi odio vel dolor.entum eu odio sit amet, accumsan viverra nulla.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<i class="fa fa-check text-success" aria-hidden="true"></i>
+							<p style="display: inline;">Nam egestas, nisi id dictum varius, nisl lacus scelerisque metus, ut placerat libero orci nec felis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="media">
+						<div class="media-left">
+							<a href="#">
+								<img class="media-object img-circle img-responsive" style="max-width: 32px; max-height: auto;" src="http://ibgmart.com/wp-content/uploads/2017/03/download-1-210x210.png" alt="...">
+							</a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">Learn More about Your Credit</h4>
+							<p>Phasellus nec turpis viverra, gravida ex dignissim, porttitor diam. Proin malesuada suscipit ex dapibus mattis. Nulla facilisi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="container">
+		<div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="https://virtuagym.com/software/wp-content/uploads/2016/01/checklist.png">
+            <h2 class="featurette-heading"> Manage Your Credit
+                <!-- <span class="text-muted">Will Catch Your Eye</span> -->
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+			<p class="lead">
+					<a class="btn btn-default btn-lg" href="#" role="button">Learn More</a>
+			</p>
+        </div>
+	</div>
+	
+		<!-- Footer -->
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<i>
+							<p>Copyright &copy; CreditBureaux 2017</p>
+							<p>&copy; 2017 CreditBureaux, Inc. CreditBureaux™ is a registered trademark of CreditBureaux, Inc. 
+								All Rights Reserved. Product name, logo, brands, and other trademarks featured or referred to 
+								within Credit Karma are the property of their respective trademark holders. This site may be 
+								compensated through third party advertisers.
+							</p>
+							<br />
+							<p>iPhone is a trademark of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+							<br />
+							<p>Android is a trademark of Google Inc.</p>
+							</br>
+							<p>The Equifax logo is a registered trademark owned by Equifax in the United States and other countries.</p>
+							<br />
+							<p>The Experian logo is a registered trademark owned by Experian in the United States and other countries.</p>
+						</i>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    
+	
+	<!-- Modal -->
+	<div class="modal fade" id="experianModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-title" id="exampleModalLabel">Experian Details</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Score Details</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h4><i class="fa fa-fw fa-globe"></i> Credit Card Use </h4>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle-thin"></i>
+										<i class="fa fa-circle-thin"></i>
+									</div>
+									<div class="panel-body">
+										<p>Phasellus in augue id risus maximus congue. In in orci eget nibh mollis ultrices. Quisque ornare ligula 
+											vel arcu pharetra consectetur. Suspendisse potenti. Nunc ornare enim quis ligula posuere, vel tempus purus ornare.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="panel panel-warning">
+									<div class="panel-heading">
+										<h4><i class="fa fa-fw fa-line-chart"></i> Payment History </h4>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle-thin"></i>
+									</div>
+									<div class="panel-body">
+										<p>Duis felis mauris, ultricies et est eu, ornare lacinia dolor. Suspendisse et nunc semper, euismod risus id, molestie leo. 
+										Nunc elementum ex sed commodo tincidunt. Nullam nec ex ante. Mauris porta magna sit amet sem porta aliquet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="panel panel-danger">
+									<div class="panel-heading">
+										<h4><i class="fa fa-fw fa-clock-o"></i> Derogatory Marks </h4>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle"></i>
+									</div>
+									<div class="panel-body">
+										<p> Vivamus felis enim, interdum sed suscipit ac, consectetur quis 
+										magna. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur 
+										assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<hr />
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Personal Information</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-12">
+										<h4 class="text-muted">Names Reported</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action">BEN NELISSEN</a>
+											<a href="#" class="list-group-item list-group-item-action">BEN C NELISSEN</a>
+											<a href="#" class="list-group-item list-group-item-action">BENC NELISSEN</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-12">
+										<h4 class="text-muted">Addresses Reported</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action">212 Cardinal Street <br />
+											Marietta, GA 30008</a>
+											<a href="#" class="list-group-item list-group-item-action">577 Anderson Ave. <br />
+											Greenville, NC 27834</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Employment Info</h4>
+							</div>
+						</div>
+						<div class="row">
+									<div class="col-md-12">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action">RIDENT ASSICATES</a>
+											<a href="#" class="list-group-item list-group-item-action">KORVER FINANCIAL PARTNERS INC</a>
+											<a href="#" class="list-group-item list-group-item-action">IVORY INVESTMENTS INC</a>
+										</div>
+									</div>
+								</div>
+						
+						<hr />
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Account Information</h3>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Auto Loans</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-info">CHANNEL/AFFILIATE BANK <span class="badge badge-pill badge-info">$1297.99</span></li>
+									<li class="list-group-item list-group-item-danger">UNF CREDIT UNION OF SOUTH <span class="badge badge-pill badge-info">$33,129.68</span></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Credit Cards</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-info">BANK OF AMERICA <span class="badge badge-pill badge-info">$7789.37</span></li>
+									<li class="list-group-item list-group-item-warning">WELLS FARGO/WACHOVIA NAT <span class="badge badge-pill badge-warning">$11,137.88</span></li>
+									<li class="list-group-item list-group-item-success">AMAZON FINANCIAL BANK AS <span class="badge badge-pill badge-success">$367.21</span></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Student Loans</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-danger">US DEPT. OF EDUCATION/GL <span class="badge badge-pill badge-danger">$99,231.11</span></li>
+									<li class="list-group-item list-group-item-warning">SALLIE MAE <span class="badge badge-pill badge-warning">$13,211.54</span></li>
+									<li class="list-group-item list-group-item-success">AMAZON FINANCIAL BANK AS <span class="badge badge-pill badge-success">$111.24</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<hr />
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Hard Inquiries</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-info">CERTIFIED CREDIT REPORTI -- Feb 22, 2017 <span class="badge badge-pill badge-info">MISC</span></li>
+								<li class="list-group-item list-group-item-info">EXPERIAN RENTAL SCREENING -- Mar 11, 2017 <span class="badge badge-pill badge-info">MISC</span></li>
+								<li class="list-group-item list-group-item-info">MERRILL LYNCH FINANCIAL R -- Jun 30, 2017 <span class="badge badge-pill badge-info">BANK</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<hr />
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Collections</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item text-muted"><i>None Reported. Keep it up!</i></li>
+							</ul>
+						</div>
+					</div>
+					
+					<hr />
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Public Records</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item text-muted"><i>None Reported. Good job!</i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Equifax Modal -->
+	<div class="modal fade" id="equifaxModal" tabindex="-1" role="dialog" aria-labelledby="equifaxModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					<h3 class="modal-title" id="exampleModalLabel">Equifax Details</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Score Details</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h4><i class="fa fa-fw fa-globe"></i> Credit Card Use </h4>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle-thin"></i>
+										<i class="fa fa-circle-thin"></i>
+									</div>
+									<div class="panel-body">
+										<p>Phasellus in augue id risus maximus congue. In in orci eget nibh mollis ultrices. Quisque ornare ligula 
+											vel arcu pharetra consectetur. Suspendisse potenti. Nunc ornare enim quis ligula posuere, vel tempus purus ornare.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="panel panel-warning">
+									<div class="panel-heading">
+										<h4><i class="fa fa-fw fa-line-chart"></i> Payment History </h4>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle-thin"></i>
+									</div>
+									<div class="panel-body">
+										<p>Duis felis mauris, ultricies et est eu, ornare lacinia dolor. Suspendisse et nunc semper, euismod risus id, molestie leo. 
+										Nunc elementum ex sed commodo tincidunt. Nullam nec ex ante. Mauris porta magna sit amet sem porta aliquet.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="panel panel-danger">
+									<div class="panel-heading">
+										<h4><i class="fa fa-fw fa-clock-o"></i> Derogatory Marks </h4>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle"></i>
+										<i class="fa fa-circle"></i>
+									</div>
+									<div class="panel-body">
+										<p> Vivamus felis enim, interdum sed suscipit ac, consectetur quis 
+										magna. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur 
+										assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<hr />
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Personal Information</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-12">
+										<h4 class="text-muted">Names Reported</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action">BEN NELISSEN</a>
+											<a href="#" class="list-group-item list-group-item-action">BEN C NELISSEN</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="row">
+									<div class="col-md-12">
+										<h4 class="text-muted">Addresses Reported</h4>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action">212 Cardinal Street <br />
+											Marietta, GA 30008</a>
+											<a href="#" class="list-group-item list-group-item-action">577 Anderson Ave. <br />
+											Greenville, NC 27834</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Employment Info</h4>
+							</div>
+						</div>
+						<div class="row">
+									<div class="col-md-12">
+										<div class="list-group">
+											<a href="#" class="list-group-item list-group-item-action">RIDENT ASSICATES</a>
+											<a href="#" class="list-group-item list-group-item-action">KORVER FINANCIAL PARTNERS INC</a>
+										</div>
+									</div>
+								</div>
+						
+						<hr />
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h3>Account Information</h3>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Auto Loans</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-info">CHANNEL/AFFILIATE BANK <span class="badge badge-pill badge-info">$1297.99</span></li>
+									<li class="list-group-item list-group-item-danger">UNF CREDIT UNION OF SOUTH <span class="badge badge-pill badge-info">$33,129.68</span></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Credit Cards</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-info">BANK OF AMERICA <span class="badge badge-pill badge-info">$7789.37</span></li>
+									<li class="list-group-item list-group-item-warning">WELLS FARGO/WACHOVIA <span class="badge badge-pill badge-warning">$11,137.88</span></li>
+									<li class="list-group-item list-group-item-success">AMAZON FINANCIAL BANK <span class="badge badge-pill badge-success">$367.21</span></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-12">
+								<h4 class="text-muted">Student Loans</h4>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item list-group-item-danger">US DEPT. OF EDUCATIO <span class="badge badge-pill badge-danger">$99,231.11</span></li>
+									<li class="list-group-item list-group-item-warning">SALLIE MAE <span class="badge badge-pill badge-warning">$13,211.54</span></li>
+									<li class="list-group-item list-group-item-success">AMAZON FINANCIAL BANK <span class="badge badge-pill badge-success">$111.24</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<hr />
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Hard Inquiries</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item list-group-item-info">LEASINGDESK -- Jan 14, 2017 <span class="badge badge-pill badge-info">MISC</span></li>
+								<li class="list-group-item list-group-item-info">CHARLOTTE CREDIT UNI -- Feb 27, 2017 <span class="badge badge-pill badge-info">CREDIT UNION</span></li>
+								<li class="list-group-item list-group-item-info">CHARLOTTE CREDIT UNI -- Apr 11, 2017 <span class="badge badge-pill badge-info">CREDIT UNION</span></li>
+								<li class="list-group-item list-group-item-info">MERRILL LYNCH FINANCIAL R -- Jun 30, 2017 <span class="badge badge-pill badge-info">BANK</span></li><li class="list-group-item list-group-item-info">MERRILL LYNCH FINANCIAL R -- Jun 30, 2017 <span class="badge badge-pill badge-info">BANK</span></li>
+								<li class="list-group-item list-group-item-info">LEASINGDESK -- Jul 07, 2017 <span class="badge badge-pill badge-info">MISC</span></li><li class="list-group-item list-group-item-info">MERRILL LYNCH FINANCIAL R -- Jun 30, 2017 <span class="badge badge-pill badge-info">BANK</span></li>
+							</ul>
+						</div>
+					</div>
+					
+					<hr />
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Collections</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item text-muted"><i>None Reported. Keep it up!</i></li>
+							</ul>
+						</div>
+					</div>
+					
+					<hr />
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h3>Public Records</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<ul class="list-group">
+								<li class="list-group-item text-muted"><i>None Reported. Good job!</i></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/creditCharts.js"></script> 
+	
+</body>
+</html>

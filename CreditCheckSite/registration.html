@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CreditBureaux Registration</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+	
+	<script src="https://use.fontawesome.com/204f54b025.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CreditBureaux</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+					<li>
+                        <a href="creditScore.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="aboutUs.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<div class="jumbotron jumbotron-fluid" id="signupJb">
+		<div class="container">
+			<h1 class="jumbotron-header">Control Your Financial Destiny</h1>
+				<p class="lead">In pharetra nunc a velit fermentum faucibus. Nullam at mauris varius, ullamcorper lorem vel, fringilla felis. Morbi ac dui ut nisl tempus vestibulum. Nunc quis aliquet felis, at placerat est. Duis velit leo, accumsan a euismod a, pulvinar eu lectus.</p>
+				<!-- <hr class="jumbotron-hr"> -->
+				<!-- <hr /> -->
+				<!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+				<p class="jumbotron-action text-center">
+					<a class="btn btn-primary btn-lg" href="#" role="button" id="beginForm">Click To Begin</a>
+			    </p>
+		</div>
+	</div>
+	
+	<div class="container" id="creditForm">
+		<div class="featurette" id="registerInstructions">
+			<div class="row">
+				<div class="col-md-offset-1 col-md-3 progressSteps">
+					<p id="regStep1" class="regInstTitle">STEP 1:</p>
+				</div>
+				<div class="col-md-4">
+					<p id="regStep2" class="regInstTitle">STEP 2:</p>
+				</div>
+				<div class="col-md-3">
+					<p id="regStep3" class="regInstTitle">STEP 3:</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-3 progressSteps">
+					<p id="regInfoStep1" class="regInst">General Information</p>
+				</div>
+				<div class="col-md-4">
+					<p id="regInfoStep2" class="regInst">Address/Location</p>
+				</div>
+				<div class="col-md-3">
+					<p id="regInfoStep3" class="regInst">Confirm Your Identity</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10 progressSteps">
+					<div class="progress" id="signUpProcess">
+					  <div id="signUpBar" class="progress-bar progress-bar-striped active" role="progressbar"
+					  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="creditForm" class="col-lg-8">
+			
+				<div class="featurette">
+				
+					<form class="form-horizontal">
+						<div id="basicDetails">
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="fName"> First Name: </label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="fName" placeholder="Enter First Name" />
+								</div>
+								
+								<label class="control-label col-sm-2" for="mInitial"> MI: </label>
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="mInitial" placeholder="Enter MI" />
+								</div>
+							</div>
+						
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="lName"> Last Name: </label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="lName" placeholder="Enter Last Name" />
+								</div>
+								
+								<label class="control-label col-sm-2" for="suffix"> Suffix: </label>
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="suffix" placeholder="Enter suffix" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="genderOption"> Gender: </label>
+								<div class="col-sm-6">
+									<label class="radio-inline"><input type="radio" name="genderOption" id="mOption" value="male">Male</label>
+									<label class="radio-inline"><input type="radio" name="genderOption"id="fOption" value="female">Female</label>
+								</div>
+							</div>
+						</div>
+						
+						<div id="addressDetails">
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="sAddress1"> Street Address: </label>
+								<div class="col-sm-6">
+									<input type="text" class="form-control" id="sAddress1" placeholder="Enter Address Line 1" />
+								</div>
+								
+								<label class="control-label col-sm-2" for="sAddress2"> Apt/Unit/Bldg: </label>
+								<div class="col-sm-2">
+									<input type="text" class="form-control" id="sAddress2" placeholder="Unit #" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="city"> City: </label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="city" placeholder="Enter City" />
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="state"> State: </label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="state" placeholder="Enter State" />
+								</div>
+								
+								<label class="control-label col-sm-2" for="zip"> Zip Code: </label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" id="zip" placeholder="Enter Zip Code" />
+								</div>
+							</div>
+						
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="addressOption"> Have You Lived Here For More Than 6 Months? </label>
+								<div class="col-sm-6">
+									<label class="radio-inline"><input type="radio" name="addressOption" value="yes">Yes</label>
+									<label class="radio-inline"><input type="radio" name="addressOption" value="no">No</label>
+								</div>
+							</div>
+						</div>
+						
+						<div id="identityDetails">
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="ssNumber"> Social Security #: </label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="ssNumber" placeholder="XXX-XX-XXXX" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="dob"> Date Of Birth: </label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="dob" placeholder="YYYY/MM/DD" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="phoneNum"> Phone Number: </label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="phoneNum" placeholder="X XXX-XXX-XXXX" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-sm-2" for="regVerify"> Verify Info: </label>
+								<label class="checkbox-inline"><input id="regVerify" type="checkbox" value="Yes">I verify that this information is correct</label>
+							</div>
+						</div>
+						
+						<div class="form-group" id="firstPrevDetails">
+							<div class="col-sm-offset-2 col-sm-2">
+								<button id="regPrev" type="button" class="btn btn-default" disabled>Previous</button>
+							</div>
+							
+							<div class="col-sm-2">
+								<button id="regNext" type="button" class="btn btn-default">Next</button>
+							</div>
+						</div>
+						
+						<div id="submitDetails">
+							<div class="form-group"> 
+								<div class="col-sm-offset-2 col-sm-10">
+									<button id="regSubmit" type="button" class="btn btn-success" disabled>Submit</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="featurette">
+					<div class="row">
+						<div class="col-offset-md-2 col-md-10">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4><i class="fa fa-fw fa-globe"></i> Credit Resources </h4>
+								</div>
+								<div class="panel-body">
+									<p>Phasellus in augue id risus maximus congue. In in orci eget nibh mollis ultrices. Quisque ornare ligula 
+										vel arcu pharetra consectetur. Suspendisse potenti. Nunc ornare enim quis ligula posuere, vel tempus purus ornare.</p>
+									<!-- <a href="#" class="btn btn-default">Learn More</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-offset-md-2 col-md-10">
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4><i class="fa fa-fw fa-line-chart"></i> Track Progress </h4>
+								</div>
+								<div class="panel-body">
+									<p>Duis felis mauris, ultricies et est eu, ornare lacinia dolor. Suspendisse et nunc semper, euismod risus id, molestie leo. 
+									Nunc elementum ex sed commodo tincidunt. Nullam nec ex ante. Mauris porta magna sit amet sem porta aliquet.</p>
+									<!-- <a href="#" class="btn btn-default">Learn More</a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<i>
+						<p>Copyright &copy; CreditBureaux 2017</p>
+						<p>&copy; 2017 CreditBureaux, Inc. CreditBureaux™ is a registered trademark of CreditBureaux, Inc. 
+							All Rights Reserved. Product name, logo, brands, and other trademarks featured or referred to 
+							within Credit Karma are the property of their respective trademark holders. This site may be 
+							compensated through third party advertisers.
+						</p>
+						<br />
+						<p>iPhone is a trademark of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+						<br />
+						<p>Android is a trademark of Google Inc.</p>
+						</br>
+						<p>The Equifax logo is a registered trademark owned by Equifax in the United States and other countries.</p>
+						<br />
+						<p>The Experian logo is a registered trademark owned by Experian in the United States and other countries.</p>
+					</i>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script src="js/loadingBarAnimate.js"></script> 
+	
+</body>
+</html>

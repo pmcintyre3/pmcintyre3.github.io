@@ -1,0 +1,443 @@
+/*
+ * Start Bootstrap - One Page Wonder (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.headline {
+    padding: 120px 0;
+}
+
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette {
+    overflow: hidden;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+	max-width: 500px;
+	height: auto;
+}
+
+.featurette-image.pull-right {
+    margin-left: 40px;
+	max-width: 500px;
+	height: auto;
+}
+
+.featurette-heading {
+    font-size: 50px;
+}
+.trademark {
+	font-weight: italic;
+}
+
+footer {
+	color: #fff;
+	background-color: #333;
+	padding: 20px 10px;
+    margin: 50px 0;
+}
+
+#mainJumbotron {
+	/* background: url("../img/jumbotron-background.jpg") no-repeat !important; */
+	background: url("/CreditCheckSite/img/jumbotron-background.jpg") right no-repeat padding-box !important;
+	/* transform-origin: right center 0; */
+	/* background-size: cover; */
+	/* background-position: right center; */
+}	
+
+.progressSteps { 
+	margin-left: 11.1%; 
+} 
+
+.creditGraph {
+	margin-top: -115px;
+}
+
+/* #scores { */
+	/* position:  */
+/* } */
+
+.jumbotron-header{
+	margin-bottom: 20px;
+}
+
+.jumbotron-hr {
+	border-top: 1px solid #ddd;
+}
+
+.jumbotron-action{
+	line-height: 1.4;
+	margin-top: 20px;
+}
+
+.evenSection {
+	background-color: #ccc;
+	padding: 20px;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+.oddSection {
+	padding: 20px;
+	padding-bottom: 40px;
+}
+
+#registerInstructions{
+	margin-top: 35px;
+}
+
+#classDiagram {
+	margin-top: 35px;
+}
+
+#creditScore {
+	font-weight: bold;
+}
+
+.graphSpace {
+	padding: 0 30px;
+	padding-bottom: 30px;
+	/* padding-left: 30px; */
+	/* padding-right: 30px; */
+}
+
+#jumbotronText {
+	max-width: 70%;
+	/* border-radius: 8px; */
+	/* padding: 16px; */
+	/* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+.regInstTitle.activeInstructions {
+	color: #2e6da4 !important;
+}
+
+.regInst.activeInstructions {
+	color: #337ab7 !important;
+}
+
+.regInstTitle.completedInstructions {
+	font-weight: italic !important;
+	color: #ccc !important;
+}
+
+.regInst.completedInstructions {
+	font-weight: italic !important;
+	color: #ccc !important;
+}
+
+.regInstTitle {
+	font-weight: bold;
+	color: #333;
+}
+
+.regInst {
+	font-weight: normal;
+	color: #333;
+}
+
+@media(max-width:1200px) {
+    .headline h1 {
+        font-size: 140px;
+    }
+
+    .headline h2 {
+        font-size: 63px;
+    }
+
+    .featurette-divider {
+        margin: 50px 0;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 20px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 20px;
+    }
+
+    .featurette-heading {
+        font-size: 35px;
+    }
+	
+	.signupInput {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+@media(max-width:991px) {
+    .headline h1 {
+        font-size: 105px;
+    }
+
+    .headline h2 {
+        font-size: 50px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-image {
+        max-width: 50%;
+    }
+
+    .featurette-image.pull-left {
+        margin-right: 10px;
+    }
+
+    .featurette-image.pull-right {
+        margin-left: 10px;
+    }
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+	
+	.signupInput {
+		margin: 0 auto;
+		float: none;
+	}
+	
+	#impNoticeBtn {
+		margin: 10px auto -10px auto;
+		/* margin-top: 10px; */
+		/* margin-bottom: -10px; */
+		display: block;
+		max-width: 100px;
+	}
+}
+
+@media(max-width:768px) {
+    .container {
+        margin: 0 15px;
+    }
+
+    .featurette-divider {
+        margin: 40px 0;
+    }
+
+    .featurette-heading {
+        font-size: 25px;
+    }
+	
+	.featurette-image.pull-left {
+        max-width: 400px;
+		height: auto;
+    }
+
+    .featurette-image.pull-right {
+        max-width: 400px;
+		height: auto;
+    }
+	
+	.signupInput {
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.progressSteps { 
+		margin-left: 0; 
+	} 
+}
+
+@media(max-width:668px) {
+    .headline h1 {
+        font-size: 70px;
+    }
+
+    .headline h2 {
+        font-size: 32px;
+    }
+
+    .featurette-divider {
+        margin: 30px 0;
+    }
+	
+	.featurette-image.pull-left {
+		margin-bottom: 10px;
+		max-width: 300px;
+		height: auto;
+    }
+
+    .featurette-image.pull-right {
+		margin-bottom: 10px;
+        max-width: 300px;
+		height: auto;
+    }
+	
+	.signupInput {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+@media(max-width:640px) {
+    .headline {
+        padding: 75px 0 25px 0;
+    }
+
+    .headline h1 {
+        font-size: 60px;
+    }
+
+    .headline h2 {
+        font-size: 30px;
+    }
+	
+	.signupInput {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+@media(max-width:375px) {
+    .featurette-divider {
+        margin: 10px 0;
+    }
+
+    .featurette-image {
+        max-width: 100%;
+    }
+
+    .featurette-image.pull-left {
+		display: none;
+        /* margin-right: 0; */
+        /* margin-bottom: 10px; */
+		margin: 0 auto;
+    }
+
+    .featurette-image.pull-right {
+		display: none;
+        /* margin-bottom: 10px; */
+        /* margin-left: 0; */
+		margin: 0 auto;
+    }
+	
+	.signupInput {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+#impNoticeBtn{
+	margin: 0 auto;
+}
+
+.navbar-inverse {
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+	box-shadow: 0 1px 1px #330;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+/* .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { */
+	/* background-color: #337ab7; */
+    /* border-color: #2e6da4; */
+/* } */
+
+/* /* The hero image */ */
+/* .hero-image { */
+    /* /* The image used */ */
+    /* background-image: url("img/photographer.jpg"); */
+
+    /* /* Set a specific height */ */
+    /* height: 50%; */
+
+    /* /* Position and center the image to scale nicely on all screens */ */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* position: relative; */
+/* } */
+
+/* /* Place text in the middle of the image */ */
+/* .hero-text { */
+    /* text-align: center; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* color: white; */
+/* } */
+
+
+
+.signupInfo {
+	margin: 20px auto;
+}
+
+.signupInput {
+	margin: 0 auto !important;
+	float: none !important;
+}
+
+#importantInfo {
+	
+	border: 1px solid #2e6da4;
+	border-radius: 2px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	padding: 40px 30px 40px 30px;
+	background-color: #337ab7;
+}
+
+#importantInfoText {
+	color: #fff;
+	margin: 0;
+	line-height: 30px;
+}
+
+#signupEmail {
+	max-width: 80%;
+	margin: 0 auto;
+	float: none;
+}
+
+#signupSubmit {
+	/* max-width: 80%; */
+	margin: 20px auto !important;
+	float: none !important;
+}
