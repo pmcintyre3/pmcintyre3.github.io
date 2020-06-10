@@ -1,16 +1,16 @@
-#Project Website
+# Project Website
 Author: Phillip McIntyre
 
 Template credited to www.styleshout.com
 
-##Description
+## Description
 This website is designed to showcase the projects
 that I do in my spare time as well as for school. It
 also serves as a place for me to put myself out there
 and show what I can do as a programmer and as a future
 developer.
 
-##Versions
+## Versions
 
 2.5: Fixed links, functioning links, redirects from phillipmcintyre.com.
 
